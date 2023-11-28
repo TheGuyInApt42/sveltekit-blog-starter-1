@@ -35,8 +35,8 @@
 
 
 <svelte:head>
-	<link rel="stylesheet" href="comments.css" />
-	<script src="comments.js"></script>
+	<link rel="stylesheet" href="/comments.css" />
+	<script src="/comments.js"></script>
 
 </svelte:head>
 
