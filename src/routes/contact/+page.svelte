@@ -22,6 +22,7 @@
 	})(remark_config.components || ['embed'], document);
 </script>
 
+
 </svelte:head>
 
 
@@ -63,3 +64,6 @@ keep the conversation about politics alive and engaging.
 
 <div id="remark42">
 </div>
+
+<div id="comments" data-url="stay-sharp.vercel.app" clickToLoad="false" />
+
