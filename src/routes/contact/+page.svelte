@@ -1,7 +1,27 @@
+<script>
+	var remark_config = {
+		host: 'https://stay-sharp.vercel.app',
+		site_id: 'remark'
+	};
+</script>
 
 
 <svelte:head>
 	<title>Contact</title>
+	<script>
+	!(function (e, n) {
+		for (var o = 0; o < e.length; o++) {
+			var r = n.createElement('script'),
+				c = '.js',
+				d = n.head || n.body;
+			'noModule' in r ? ((r.type = 'module'), (c = '.mjs')) : (r.async = !0),
+				(r.defer = !0),
+				(r.src = remark_config.host + '/web/' + e[o] + c),
+				d.appendChild(r);
+		}
+	})(remark_config.components || ['embed'], document);
+</script>
+
 </svelte:head>
 
 
@@ -40,3 +60,6 @@ keep the conversation about politics alive and engaging.
 
 	<input type="submit" value="Send">
 </form>
+
+<div id="remark42">
+</div>
