@@ -34,6 +34,13 @@
 </script>
 
 
+<svelte:head>
+	<link rel="stylesheet" href="comments.css" />
+	<script src="comments.js"></script>
+
+</svelte:head>
+
+
 <!-- 
 	The below markup is used on every page in the site. The <slot> is where the page's
 	actual contents will show up.
