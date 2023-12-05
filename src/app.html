@@ -14,11 +14,16 @@
 
 		<!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
 
-		
-		<script src="./comments.js"></script>
-		<link rel="stylesheet" href="./comments.css" />
+		<!-- Waline -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+		/>
+
 	</head>
 	<body>
 		<div id="svelte">%sveltekit.body%</div>
+
+		
 	</body>
 </html>

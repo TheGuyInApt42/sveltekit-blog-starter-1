@@ -1,8 +1,20 @@
 <script>
-	var remark_config = {
-		host: 'https://stay-sharp.vercel.app',
-		site_id: 'remark'
-	};
+	import {init} from "@waline/client";
+	import { onMount } from "svelte";
+
+	let waline;
+
+	onMount(async () =>{
+		init({
+		el: waline,
+		serverURL: 'https://waline-o7f4rtmdo-jarrodgorham.vercel.app',
+		lang: 'en',
+		pageview: true
+	}); 
+	})
+	
+	
+	console.log(waline);
 </script>
 
 
@@ -50,9 +62,6 @@ keep the conversation about politics alive and engaging.
 	<input type="submit" value="Send">
 </form>
 
-<div id="remark42">
-</div>
+<div id="waline" bind:this={waline}></div>
 
-
-<div id="comments" data-url="stay-sharp.vercel.app" clickToLoad="false" />
 
