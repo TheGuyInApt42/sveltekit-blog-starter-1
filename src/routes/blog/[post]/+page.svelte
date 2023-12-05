@@ -1,6 +1,15 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
-export let data
+	import Comments from "$lib/components/Comments.svelte";
+	import PageViews from "$lib/components/PageViews.svelte";
+	import CommentsCount from "$lib/components/CommentsCount.svelte"
+
+
+	export let data
+
+
+
+
 
 const {
 	title,
@@ -13,6 +22,8 @@ const {
 	categories 
 } = data.meta
 const { PostContent } = data
+
+
 </script>
 
 
@@ -44,6 +55,8 @@ const { PostContent } = data
 	/>
 
 	<h1>{ title }</h1>
+
+	<PageViews data={data} />
 	
 	<div class="meta">
 		<b>Published:</b> {date}
@@ -68,3 +81,7 @@ const { PostContent } = data
 		</aside>
 	{/if}
 </article> 
+
+<!-- Comments Section-->
+<CommentsCount data={data} />
+<Comments data={data} />

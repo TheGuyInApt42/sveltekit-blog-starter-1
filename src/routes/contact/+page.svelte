@@ -1,21 +1,3 @@
-<script>
-	import {init} from "@waline/client";
-	import { onMount } from "svelte";
-
-	let waline;
-
-	onMount(async () =>{
-		init({
-		el: waline,
-		serverURL: 'https://waline-ten-hazel.vercel.app',
-		lang: 'en',
-		pageview: true
-	}); 
-	})
-	
-</script>
-
-
 <svelte:head>
 	<title>Contact</title>
 	
@@ -59,7 +41,5 @@ keep the conversation about politics alive and engaging.
 
 	<input type="submit" value="Send">
 </form>
-
-<div id="waline" bind:this={waline}></div>
 
 
