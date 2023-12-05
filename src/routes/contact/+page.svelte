@@ -7,7 +7,7 @@
 	onMount(async () =>{
 		init({
 		el: waline,
-		serverURL: 'https://waline-o7f4rtmdo-jarrodgorham.vercel.app',
+		serverURL: 'https://waline-ten-hazel.vercel.app',
 		lang: 'en',
 		pageview: true
 	}); 
